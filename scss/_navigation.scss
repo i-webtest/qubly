@@ -1,0 +1,55 @@
+.navigation {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    transition: color 0.2s ease;
+  }
+
+  &__link:hover {
+    color: $primary-purple;
+  }
+
+  &__link:first-child {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__link:first-child svg {
+    width: 10px;
+    height: 6px;
+  }
+
+  &__submenu {
+    display: none;
+  }
+
+  &__submenu-link {
+  }
+
+  &__button {
+    color: $primary-purple;
+    border: 1px solid $primary-purple;
+    border-radius: 23px;
+    padding: 12px 24px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+
+  &__button:hover {
+    color: $white-color;
+    background-color: $primary-purple;
+  }
+}

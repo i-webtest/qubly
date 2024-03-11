@@ -17,7 +17,82 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <script src="js/script.js" type="module"></script>
+
     <title>QUBLY - Your data with real-time analytics</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="/">
+          <img class="logo" src="img/logo.svg" alt="Logo" />
+        </a>
+
+        <button class="header__button hamburger">
+          <span class="hamburger__line"></span>
+        </button>
+
+        <nav class="header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">
+                About
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </a>
+
+              <ul class="navigation__submenu">
+                <li>
+                  <a href="#" class="navigation__submenu-link">Certification</a>
+                </li>
+                <li>
+                  <a href="#" class="navigation__submenu-link">Team</a>
+                </li>
+                <li>
+                  <a href="#" class="navigation__submenu-link">Requisites</a>
+                </li>
+                <li>
+                  <a href="#" class="navigation__submenu-link">History</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#advantages">Advantages</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#reviews">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#login">Login</a>
+            </li>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">Start free trial</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container" id="about"></div>
+      </section>
+      <section>
+        <div class="container" id="advantages"></div>
+      </section>
+      <section>
+        <div class="container" id="reviews"></div>
+      </section>
+      <section>
+        <div class="container" id="login"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container"></div>
+    </footer>
+
+    <div class="overlay"></div>
+  </body>
 </html>
