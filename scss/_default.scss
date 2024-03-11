@@ -1,0 +1,106 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $default-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: $white-color;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  color: $title-color;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: inherit;
+  color: $title-color;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: calc($container-width + $container-padding * 2);
+  padding: 0 $container-padding;
+  margin: 0 auto;
+}
+
+// @media (max-width: 660px) {
+//   .container {
+//     --container-padding: 20px;
+//   }
+
+//   .title {
+//     font-size: 24px;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .container {
+//     --container-padding: 16px;
+//   }
+// }
