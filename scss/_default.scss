@@ -78,6 +78,10 @@ h3 {
   color: $title-color;
 }
 
+.text {
+  color: $text-color;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
