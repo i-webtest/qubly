@@ -86,10 +86,19 @@ h3 {
   display: flex;
   align-items: center;
   gap: 14px;
+  max-width: fit-content;
   color: $primary-purple;
   background-color: $bg-color;
   border-radius: 20px;
   padding: 8px 16px;
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .overlay {
@@ -118,23 +127,15 @@ h3 {
 }
 
 .container {
-  max-width: calc($container-width + $container-padding * 2);
-  padding: 0 $container-padding;
+  max-width: 960px;
+  padding: 0 30px;
   margin: 0 auto;
+
+  @media (max-width: 576px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px;
+  }
 }
-
-// @media (max-width: 660px) {
-//   .container {
-//     --container-padding: 20px;
-//   }
-
-//   .title {
-//     font-size: 24px;
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .container {
-//     --container-padding: 16px;
-//   }
-// }
