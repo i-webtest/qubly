@@ -75,15 +75,65 @@
     </header>
 
     <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <div class="hero__tag tag">
+              <svg>
+                <use href="img/sprite.svg#stars"></use>
+              </svg>
+
+              <p>v3.1 released. <a href="#about">Learn more</a></p>
+            </div>
+
+            <h1 class="hero__title">Your data with real-time analytics</h1>
+
+            <p class="hero__description">
+              Harness the potential of Big Data Analytics & Cloud Services and become a data-driven organization with
+              Needle tail
+            </p>
+
+            <div class="hero__btns">
+              <button class="hero__btn" type="button">Start free trial</button>
+              <a class="hero__link" href="#about">Learn more</a>
+            </div>
+          </div>
+
+          <div class="hero__banner">
+            <picture class="hero__banner-picture">
+              <source
+                srcset="img/hero-banner.avif, img/hero-banner@2x.avif 2x, img/hero-banner@4x.avif 4x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/hero-banner.webp, img/hero-banner@2x.webp 2x, img/hero-banner@4x.webp 4x"
+                type="image/webp"
+              />
+              <img
+                class="hero__image"
+                src="img/hero-banner.png"
+                srcset="img/hero-banner@2x.png 2x, img/hero-banner@4x.png 4x"
+                width="472"
+                height="370"
+                alt="Banner"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div class="container" id="about"></div>
       </section>
+
       <section>
         <div class="container" id="advantages"></div>
       </section>
+
       <section>
         <div class="container" id="reviews"></div>
       </section>
+
       <section>
         <div class="container" id="login"></div>
       </section>
