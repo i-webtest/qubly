@@ -33,11 +33,19 @@
   }
 
   &__link {
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+    border-radius: 4px;
     transition: color 0.2s ease;
   }
 
   &__link:hover {
     color: $primary-purple;
+  }
+
+  &__link:focus-visible {
+    color: $primary-purple;
+    outline-color: $primary-purple;
   }
 
   &__link:first-child {
@@ -91,13 +99,24 @@
     color: $primary-purple;
     border: 1px solid $primary-purple;
     border-radius: 23px;
-    padding: 12px 24px;
     transition: color 0.2s ease, background-color 0.2s ease;
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+    padding: 12px 24px;
   }
 
   &__button:hover {
     color: $white-color;
     background-color: $primary-purple;
+
+    @media (max-width: 768px) {
+      color: $primary-purple;
+      background-color: transparent;
+    }
+  }
+
+  &__button:focus-visible {
+    outline-color: $primary-purple;
   }
 }
 
