@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="fonts/Metropolis-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Metropolis-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#722ed1" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <script src="js/script.js" type="module"></script>
+
+    <title>QUBLY - Your data with real-time analytics</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="/">
+          <img class="logo" src="img/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- <div class="overlay"></div> -->
+
+        <button class="header__button hamburger">
+          <span class="hamburger__line"></span>
+        </button>
+
+        <nav class="header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">
+                About
+                <svg>
+                  <use href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </a>
+
+              <ul class="navigation__submenu">
+                <li class="navigation__submenu-item">
+                  <a href="#" class="navigation__submenu-link">Certification</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#" class="navigation__submenu-link">Team</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#" class="navigation__submenu-link">Requisites</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#" class="navigation__submenu-link">History</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#advantages">Advantages</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#reviews">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#login">Login</a>
+            </li>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">Start free trial</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content wow slideInLeft" data-wow-duration="2s">
+            <div class="hero__tag tag">
+              <svg class="hero__tag-icon">
+                <use href="img/sprite.svg#stars"></use>
+              </svg>
+
+              <p>v3.1 released. <a class="hero__tag-link" href="#about">Learn more</a></p>
+            </div>
+
+            <h1 class="hero__title">Your data with real-time analytics</h1>
+
+            <p class="hero__description">
+              Harness the potential of Big Data Analytics & Cloud Services and become a data-driven organization with
+              Needle tail
+            </p>
+
+            <div class="hero__btns">
+              <button class="hero__btn" type="button">Start free trial</button>
+              <a class="hero__btn hero__link" href="#about">Learn more</a>
+            </div>
+          </div>
+
+          <div class="hero__banner wow slideInRight" data-wow-duration="2s">
+            <picture class="hero__banner-picture">
+              <source
+                srcset="img/hero-banner.avif, img/hero-banner@2x.avif 2x, img/hero-banner@4x.avif 4x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/hero-banner.webp, img/hero-banner@2x.webp 2x, img/hero-banner@4x.webp 4x"
+                type="image/webp"
+              />
+              <img
+                class="hero__image animate-graphic"
+                src="img/hero-banner.png"
+                srcset="img/hero-banner@2x.png 2x, img/hero-banner@4x.png 4x"
+                width="472"
+                height="370"
+                alt="Banner"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container" id="about"></div>
+      </section>
+
+      <section>
+        <div class="container" id="advantages"></div>
+      </section>
+
+      <section>
+        <div class="container" id="reviews"></div>
+      </section>
+
+      <section>
+        <div class="container" id="login"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container"></div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <script src="js/module/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
