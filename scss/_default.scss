@@ -80,6 +80,14 @@ h3 {
 
 .text {
   color: $text-color;
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .tag {
@@ -141,7 +149,7 @@ h3 {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1020px;
   padding: 0 30px;
   margin: 0 auto;
 

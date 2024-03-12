@@ -69,16 +69,13 @@
 
   &__description {
     max-width: 480px;
-    color: $text-color;
 
     @media (max-width: 576px) {
       max-width: 420px;
-      font-size: 14px;
     }
 
     @media (max-width: 480px) {
       max-width: 360px;
-      font-size: 12px;
     }
   }
 
