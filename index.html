@@ -276,7 +276,7 @@
           <h2 class="visually-hidden">Reviews</h2>
 
           <ul class="reviews__tabs-content">
-            <li class="reviews__tabs-item" id="tab-1">
+            <li class="reviews__tabs-item active" id="tab-1">
               <p class="reviews__tabs-text">
                 "What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in
                 the process"
@@ -284,61 +284,66 @@
               <picture>
                 <source srcset="img/user_1.avif" type="image/avif" />
                 <source srcset="img/user_1.webp" type="image/webp" />
-                <img class="reviews__tabs-avatar" src="img/user_1.jpeg" alt="Joshua S Banton" />
+                <img class="reviews__tabs-avatar" src="img/user_1.jpeg" alt="Joshua S Banton" width="80" height="80" />
               </picture>
-              <p class="reviews__tabs-user">Joshua S Banton CTO @ Angular</p>
+              <h3 class="reviews__tabs-user">Joshua S Banton CTO @ Angular</h3>
             </li>
 
             <li class="reviews__tabs-item" id="tab-2">
               <p class="reviews__tabs-text">
-                "Nostrum repudiandae adipisci porro animi dolor asperiores totam quo ratione libero dolorum voluptatem
-                explicabo nam laudantium sunt, vero perferendis facilis ab cupiditate excepturi!"
+                "Nostrum repudiandae adipisci porro animi dolor asperiores totam quo ratione libero dolorum voluptatem!"
               </p>
               <picture>
                 <source srcset="img/user_2.avif" type="image/avif" />
                 <source srcset="img/user_2.webp" type="image/webp" />
-                <img class="reviews__tabs-avatar" src="img/user_2.jpeg" alt="Julia C Cox" />
+                <img class="reviews__tabs-avatar" src="img/user_2.jpeg" alt="Julia C Cox" width="80" height="80" />
               </picture>
-              <p class="reviews__tabs-user">Julia C Cox CTO @ Kotlin</p>
+              <h3 class="reviews__tabs-user">Melissa C Cox CTO @ Kotlin</h3>
             </li>
 
             <li class="reviews__tabs-item" id="tab-3">
               <p class="reviews__tabs-text">
                 "Expedita qui eos, voluptatibus delectus nihil corporis aut accusantium numquam iste ea aliquam
-                praesentium voluptates, a est doloribus. Obcaecati autem excepturi vel!"
+                praesentium voluptates, a est doloribus."
               </p>
               <picture>
                 <source srcset="img/user_3.avif" type="image/avif" />
                 <source srcset="img/user_3.webp" type="image/webp" />
-                <img class="reviews__tabs-avatar" src="img/user_3.jpeg" alt="Leonard J Urias" />
+                <img class="reviews__tabs-avatar" src="img/user_3.jpeg" alt="Leonard J Urias" width="80" height="80" />
               </picture>
-              <p class="reviews__tabs-user">Leonard J Urias CTO @ Nvidia</p>
+              <h3 class="reviews__tabs-user">Leonard J Urias CTO @ Nvidia</h3>
             </li>
 
             <li class="reviews__tabs-item" id="tab-4">
               <p class="reviews__tabs-text">
                 "Odit illo distinctio nisi, delectus omnis consequuntur reiciendis, vel natus voluptate quod dicta
-                similique possimus, laboriosam amet quis consectetur."
+                similique possimus."
               </p>
               <picture>
                 <source srcset="img/user_4.avif" type="image/avif" />
                 <source srcset="img/user_4.webp" type="image/webp" />
-                <img class="reviews__tabs-avatar" src="img/user_4.jpeg" alt="Guadalupe R Dahl" />
+                <img class="reviews__tabs-avatar" src="img/user_4.jpeg" alt="Guadalupe R Dahl" width="80" height="80" />
               </picture>
-              <p class="reviews__tabs-user">Guadalupe R Dahl CTO @ Nuxt</p>
+              <h3 class="reviews__tabs-user">Violet B Yost CTO @ Nuxt</h3>
             </li>
 
             <li class="reviews__tabs-item" id="tab-5">
               <p class="reviews__tabs-text">
                 "Nisi quae laudantium nesciunt voluptatibus molestiae laborum voluptatum, necessitatibus ad perspiciatis
-                consectetur iure fugit ab quam, harum corporis, quaerat cupiditate ullam quos beatae alias."
+                consectetur."
               </p>
               <picture>
                 <source srcset="img/user_5.avif" type="image/avif" />
                 <source srcset="img/user_5.webp" type="image/webp" />
-                <img class="reviews__tabs-avatar" src="img/user_5.jpeg" alt="Stephen L Gonzales" />
+                <img
+                  class="reviews__tabs-avatar"
+                  src="img/user_5.jpeg"
+                  alt="Stephen L Gonzales"
+                  width="80"
+                  height="80"
+                />
               </picture>
-              <p class="reviews__tabs-user">Stephen L Gonzales CTO @ Stackbit</p>
+              <h3 class="reviews__tabs-user">Dale R Helsel CTO @ Stackbit</h3>
             </li>
           </ul>
 
@@ -346,47 +351,32 @@
 
           <ul class="reviews__list">
             <li class="reviews__item">
-              <button class="reviews__btn" data-tab="#tab-1">
-                <svg class="reviews__btn-icon">
-                  <use href="img/sprite.svg#angular"></use>
-                </svg>
-                <!-- <img class="reviews__btn-icon" src="" alt="" /> -->
+              <button class="reviews__btn active" data-tab="#tab-1" type="button">
+                <img class="reviews__btn-icon" src="img/angular.svg" alt="Angular" />
               </button>
             </li>
 
             <li class="reviews__item">
-              <button class="reviews__btn" data-tab="#tab-2">
-                <svg class="reviews__btn-icon">
-                  <use href="img/sprite.svg#kotlin"></use>
-                </svg>
-                <!-- <img class="reviews__btn-icon" src="" alt="" /> -->
+              <button class="reviews__btn" data-tab="#tab-2" type="button">
+                <img class="reviews__btn-icon" src="img/kotlin.svg" alt="Kotlin" />
               </button>
             </li>
 
             <li class="reviews__item">
-              <button class="reviews__btn" data-tab="#tab-3">
-                <svg class="reviews__btn-icon">
-                  <use href="img/sprite.svg#nvidia"></use>
-                </svg>
-                <!-- <img class="reviews__btn-icon" src="" alt="" /> -->
+              <button class="reviews__btn" data-tab="#tab-3" type="button">
+                <img class="reviews__btn-icon" src="img/nvidia.svg" alt="Nvidia" />
               </button>
             </li>
 
             <li class="reviews__item">
-              <button class="reviews__btn" data-tab="#tab-4">
-                <svg class="reviews__btn-icon">
-                  <use href="img/sprite.svg#nuxt"></use>
-                </svg>
-                <!-- <img class="reviews__btn-icon" src="" alt="" /> -->
+              <button class="reviews__btn" data-tab="#tab-4" type="button">
+                <img class="reviews__btn-icon" src="img/nuxt.svg" alt="Nuxt" />
               </button>
             </li>
 
             <li class="reviews__item">
-              <button class="reviews__btn" data-tab="#tab-5">
-                <svg class="reviews__btn-icon">
-                  <use href="img/sprite.svg#stackbit"></use>
-                </svg>
-                <!-- <img class="reviews__btn-icon" src="" alt="" /> -->
+              <button class="reviews__btn" data-tab="#tab-5" type="button">
+                <img class="reviews__btn-icon" src="img/stackbit.svg" alt="Stackbit" />
               </button>
             </li>
           </ul>
