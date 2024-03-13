@@ -123,8 +123,8 @@
         </div>
       </section>
 
-      <section class="about">
-        <div class="container about__container" id="about">
+      <section class="about" id="about">
+        <div class="container about__container">
           <div class="about__tag tag wow slideInDown" data-wow-delay="300ms">
             <svg class="about__tag-icon">
               <use href="img/sprite.svg#eye"></use>
@@ -175,8 +175,100 @@
         </div>
       </section>
 
-      <section>
-        <div class="container" id="advantages"></div>
+      <section class="advantages" id="advantages">
+        <div class="container advantages__container">
+          <div class="advantages__wrapper">
+            <div class="advantages__image">
+              <picture class="advantages__picture">
+                <source
+                  srcset="
+                    img/advantages-banner-left.avif,
+                    img/advantages-banner-left@2x.avif 2x,
+                    img/advantages-banner-left@4x.avif 4x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/advantages-banner-left.webp,
+                    img/advantages-banner-left@2x.webp 2x,
+                    img/advantages-banner-left@4x.webp 4x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="advantages__img"
+                  src="img/advantages-banner-left.png"
+                  srcset="img/advantages-banner-left@2x.png 2x, img/advantages-banner-left@4x.png 4x"
+                  width="413"
+                  height="459"
+                  alt="Banner"
+                />
+              </picture>
+            </div>
+
+            <div class="advatages__content">
+              <div class="advantages__tag tag">
+                <svg class="advantages__tag-icon">
+                  <use href="img/sprite.svg#electronic"></use>
+                </svg>
+                <p>For Product Teams</p>
+              </div>
+
+              <h2 class="advantages__title">Launch with the best stack</h2>
+              <p class="advantages__description text">
+                A centralized platform that integrates zillions of data sources using Big Data ELT (Extract, Load &
+                Transform) that leaves no data behind
+              </p>
+            </div>
+          </div>
+
+          <div class="advantages__wrapper">
+            <div class="advatages__content">
+              <div class="advantages__tag tag">
+                <svg class="advantages__tag-icon">
+                  <use href="img/sprite.svg#compass"></use>
+                </svg>
+                <p>For Engineering Teams</p>
+              </div>
+
+              <h2 class="advantages__title">Data-driven pipelines in minutes</h2>
+              <p class="advantages__description text">
+                Maintenance-free data pipelines with quick set-up and straight-forward deployments that are powered by a
+                modern & scalable platform.
+              </p>
+            </div>
+
+            <div class="advantages__image">
+              <picture class="advantages__picture">
+                <source
+                  srcset="
+                    img/advantages-banner-right.avif,
+                    img/advantages-banner-right@2x.avif 2x,
+                    img/advantages-banner-right@4x.avif 4x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/advantages-banner-right.webp,
+                    img/advantages-banner-right@2x.webp 2x,
+                    img/advantages-banner-right@4x.webp 4x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="advantages__img"
+                  src="img/advantages-banner-right.png"
+                  srcset="img/advantages-banner-right@2x.png 2x, img/advantages-banner-right@4x.png 4x"
+                  width="593"
+                  height="414"
+                  alt="Banner"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>
